@@ -11,19 +11,33 @@ The Data Scientist Salary Prediction application provides an interactive user in
 
 ## Data
 The data is scrapped from glassdoor and it's columns are: 
+
 "Job Title",
+
 "Salary Estimate",
+
 'Job Description', 
+
 'Rating',
+
 'Company Name', 
+
 'Location', 
+
 'Headquarters', 
+
 'Size', 
-'Founded',       
+
+'Founded', 
+
 'Type of ownership', 
+
 'Industry',
+
 'Sector', 
+
 'Revenue', 
+
 'Competitors'
 
 
