@@ -32,14 +32,20 @@ Salary Estimate
 After preprocessing, The following columns are extracted:
 
 job_simp: Simplified job title (e.g., "Data Scientist", "Data Engineer").
+
 Hourly_Pay: Indicates if the salary is hourly.
 Employer_Provided: Indicates if the salary was provided by the employer.
+
 Maximum Salary: The maximum salary.
+
 Minimum Salary: The minimum salary.
+
 Average Salary: The average salary.
 
 Skills and Qualifications:
-python, scala, java, sql, scikit-learn, tensorflow, keras, matplotlib, tableau, powerbi, plotly, d3.js, apache spark, hadoop, aws, google cloud, pandas, numpy, excel: Binary indicators for whether the job description mentions the corresponding skills or technologies.
+(python, scala, java, sql, scikit-learn, tensorflow, keras, matplotlib, tableau, powerbi, plotly, d3.js, apache spark, hadoop, aws, google cloud, pandas, numpy, excel)
+Binary indicators for whether the job description mentions the corresponding skills or technologies.
+
 Extracted Skills: A list of skills extracted from the job description.
 
 Educational Requirements: The minimum educational requirements specified in the job description.
