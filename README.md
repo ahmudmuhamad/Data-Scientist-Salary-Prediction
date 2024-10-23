@@ -1,16 +1,16 @@
 # Data Scientist Salary Prediction
 
-This project aims to predict the average salary of data scientists based on various input features.
+
 
 
 ## Introduction
 
-The Data Scientist Salary Prediction application provides an interactive user interface using Streamlit, allowing users to input specific characteristics and receive a predicted average salary. This model leverages multiple machine learning algorithms trained on data scrapped from glassdoor.
+The Data Scientist Salary Prediction application provides an interactive user interface using Streamlit. Users can input specific characteristics and receive a predicted average salary. This model leverages multiple machine learning algorithms trained on data scrapped from Glassdoor.
 
 
 
 ## Data
-The data is scrapped from glassdoor and it's columns are: 
+The data is scrapped from Glassdoor and its columns are: 
 
 "Job Title",
 
@@ -73,7 +73,7 @@ Age_of_company: The age of the company.
 Num_Competitors: The number of competitors listed in the job description.
 Revenue Numeric: The company's revenue, converted to a numerical value.
 
-These columns provide a comprehensive dataset for analyzing factors that influence data science salaries and building a predictive model.
+These columns provide a comprehensive dataset for analyzing factors influencing data science salaries and building a predictive model.
        	
 
 
