@@ -36,4 +36,45 @@ After preprocessing, the following columns are extracted:
 - **Educational Requirements**: The minimum educational requirements specified in the job description.
 - **Company Information**:
   - **Company**: The name of the company.
-  - **State**: The state
+  - **State**: The state where the job is located.
+  - **Same State**: Indicates if the job location matches the company's headquarters.
+  - **Classified Size**: The classified size of the company (e.g., "Small", "Medium", "Large").
+  - **Age of Company**: The age of the company.
+  - **Num Competitors**: The number of competitors listed in the job description.
+  - **Revenue Numeric**: The company's revenue, converted to a numerical value.
+
+These columns provide a comprehensive dataset for analyzing factors influencing data science salaries and for building a predictive model.
+
+## Machine Learning Models
+
+This project implements several regression models to predict salaries:
+
+1. **Linear Regression**
+   - A basic regression model that establishes a relationship between the input features and the salary.
+
+2. **Lasso Regression**
+   - Utilizes L1 regularization to prevent overfitting and enhance model interpretability.
+   - **Grid Search Parameters**:
+     - `param_grid`: A set of hyperparameters to optimize, including the regularization strength.
+
+3. **Ridge Regression**
+   - Employs L2 regularization to handle multicollinearity and improve model performance.
+   - **Grid Search Parameters**:
+     - `alpha`: Various values for the regularization strength (`[0.01, 0.1, 1, 10, 100]`).
+
+4. **Random Forest Regressor**
+   - An ensemble model that enhances prediction accuracy by averaging multiple decision trees.
+   - **Grid Search Parameters**:
+     - `n_estimators`: Number of trees in the forest (`[50, 100]`).
+     - `max_features`: The number of features to consider when looking for the best split (`['auto', 'sqrt']`).
+     - `max_depth`: Maximum depth of the tree (`[None, 10, 20, 30]`).
+     - `min_samples_split`: Minimum number of samples required to split an internal node (`[2, 5, 10]`).
+     - `min_samples_leaf`: Minimum number of samples required to be at a leaf node (`[1, 2, 4]`).
+
+## Model Deployment Using Streamlit
+
+The final step involved deploying the selected machine learning model using a Streamlit application. This interactive web app allows users to input parameters and receive real-time predictions.
+
+## Conclusion
+
+This project successfully developed a machine learning model capable of predicting data scientist salaries based on various input features. The model serves as a valuable tool for job seekers and employers to understand salary trends and make informed decisions.
